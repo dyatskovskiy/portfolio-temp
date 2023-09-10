@@ -15,29 +15,27 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="container">
       <div class="logo">
         <a href="#">
           <svg>
-            <use href="img/icons.svg#code" width="67" height="67"></use>
-          </svg>
-          DYatskovskiy
-        </a>
+            <use href="img/icons.svg#code" width="67" height="67"></use></svg
+        ></a>
+
+        <a class="logo-text" href="#">DYatskovskiy</a>
       </div>
 
-      <ul class="nav_links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">About Me</a></li>
-        <li class="link"><a href="#">Services</a></li>
-        <li class="link"><a href="#">Projects</a></li>
-        <li class="link"><a href="#">Testimonials</a></li>
-        <li class="link"><a href="#">Contact</a></li>
+      <ul class="nav-links">
+        <li class="list-item"><a href="#">Home</a></li>
+        <li class="list-item"><a href="#">About Me</a></li>
+        <li class="list-item"><a href="#">Services</a></li>
+        <li class="list-item"><a href="#">Projects</a></li>
+        <li class="list-item"><a href="#">Testimonials</a></li>
+        <li class="list-item"><a href="#">Contact</a></li>
       </ul>
 
-      <button type="button" class="cv-dwnld">Downlaod CV</button>
+      <button class="btn" type="button" class="cv-dwnld">Download CV</button>
     </nav>
-
-    <script src="script.js"></script>
 
     <header>
       <div class="text_wrapper">
@@ -50,26 +48,38 @@
         </p>
         <button>Hire Me</button>
       </div>
-      <div class="main_img">
-        <img src="./img/1st-img.png" alt="photo" />
-        <svg>
-          <use
-            href="./img/icons.svg#facebook"
-            width="32"
-            height="32"
-          ></use></svg
-        ><svg>
-          <use href="./img/icons.svg#twitter" width="32" height="32"></use></svg
-        ><svg>
-          <use
-            href="./img/icons.svg#instagram"
-            width="32"
-            height="32"
-          ></use></svg
-        ><svg>
-          <use href="./img/icons.svg#linkedin" width="32" height="32"></use>
-        </svg>
+
+      <div class="main-img">
+        <img src="./img/1img.png" alt="photo" />
+        <div class="soc-wrapper">
+          <a class="soc-icon-link" href="#">
+            <svg>
+              <use href="./img/icons.svg#facebook" width="32" height="32"></use>
+            </svg>
+          </a>
+          <a class="soc-icon-link" href="#">
+            <svg>
+              <use href="./img/icons.svg#twitter" width="32" height="32"></use>
+            </svg>
+          </a>
+          <a class="soc-icon-link" href="#">
+            <svg>
+              <use
+                href="./img/icons.svg#instagram"
+                width="32"
+                height="32"
+              ></use>
+            </svg>
+          </a>
+          <a class="soc-icon-link" href="#">
+            <svg>
+              <use href="./img/icons.svg#linkedin" width="32" height="32"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </header>
+
+    <script src="script.js"></script>
   </body>
 </html>

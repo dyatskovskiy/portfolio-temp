@@ -1,22 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-img{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+img {
     width: 100%;
     display: flex;
 }
 
-a{text-decoration: none;}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-nav {
-    max-width: 1420px;
+li{
+    list-style: none;
+}
 
+button { 
+    cursor: pointer;
 }
 
 svg {
     fill: black
 }
+
+/* ______________________________ */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 12rem;
+}
+
+.logo svg{
+    width: 67px;
+    height: 67px;
+    stroke: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo svg:is(:hover){
+    fill: #e66300;
+}
+
+.logo-text{
+font-size: 4.8rem;
+}
+
+nav{
+    max-width: 140rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+
+.list-item {
+    position: relative;
+}
+.list-item::before {
+         content: '';
+        position: absolute;
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #ff7b16;
+        transition: all 0.2s ease;
+}
+
+.list-item:hover::before{
+width: 50%;
+}
+
+.list-item::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FD6F00;
+    transition: all 0.3s ease;
+    }
+
+
+.list-item:hover::after
+{
+        width: 80%;
+        height: 3px;
+    }
+
+nav .btn{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    height: 4.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #FD6F00;
+    padding: 1em 2em;
+    transition: all 300ms ease;
+    
+}
+
+nav .btn:is(:hover, :focus){
+background-color: #e66300;
+border-radius: 8px;
+}
+
+
+/* ______________________________________ */
+
+header {
+    max-width: 140rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    gap: 3rem;
+
+}
+
+.main-img img{
+    width: 538px;
+}
+
+.soc-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.soc-icon-link svg {
+    width: 32px;
+    height: 32px;
+    fill: #000;
+    transition: all 0.3s ease;
+}
+
+.soc-icon-link svg:hover{
+fill: #e66300;
+}
+
+
